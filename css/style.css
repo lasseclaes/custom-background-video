@@ -1,0 +1,134 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\000031}}
+* {
+  box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\000035}}
+html, body {
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000310}}
+body {
+  font-size: 14px;
+  font-family: verdana;
+  background-color: red; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000316}}
+a {
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000328}}
+h1 {
+  font-size: 2rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\000036}}
+.centerContent, header div, main div, footer div {
+  width: 75%;
+  margin: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000311}}
+body {
+  background-color: green; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000316}}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #2196f3;
+  position: fixed;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000326}}
+  header div i.fa {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000331}}
+  header div nav {
+    width: auto;
+    height: 50px;
+    float: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000336}}
+    header div nav a {
+      display: block;
+      float: left;
+      padding: 0 25px 0 25px;
+      line-height: 50px;
+      color: white;
+      transition-duration: 0.5s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000344}}
+      header div nav a:hover {
+        background-color: #e91e63; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000352}}
+main {
+  padding-top: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000355}}
+  main div {
+    height: 1200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000362}}
+    main div article {
+      width: 300px;
+      height: 500px;
+      background-color: red; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000370}}
+footer {
+  height: 150px;
+  background-color: #757575; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000379}}
+  footer div a i.fa {
+    float: right;
+    margin-left: 15px;
+    margin-top: -25px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000386}}
+  footer div a i.fa-facebook {
+    background-color: #3b5998;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000389}}
+  footer div a i.fa-linkedin {
+    background-color: #007bb5;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000392}}
+  footer div a i.fa-github-alt {
+    background-color: #913399;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px; }
+
+@media screen and (max-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\00003101}}
+  .centerContent, header div, main div, footer div {
+    width: calc(100% - 50px); } }
+
+/*# sourceMappingURL=style.css.map */

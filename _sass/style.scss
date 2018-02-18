@@ -1,0 +1,105 @@
+@import "_variables";
+@import "_reset";
+@import "_mixin";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.centerContent{
+  width:75%;
+  margin:auto;
+}
+
+body{
+  background-color: green;
+
+}
+
+header{
+  width:100%;
+  height: 50px;
+  background-color: $primaryColor;
+  position:fixed;
+  box-shadow:3px 3px 5px rgba(0,0,0,0.25);
+
+  div{
+    @extend .centerContent;
+
+    i.fa{
+      @include icons(transparent);
+      float:left;
+    }
+
+    nav{
+      width:auto;
+      height:50px;
+      float:right;
+
+      a{
+        display:block;
+        float:left;
+        padding:0 25px 0 25px;
+        line-height:50px;
+        color:white;
+        transition-duration:0.5s;
+
+        &:hover{
+          background-color:$hover;
+        }
+      }
+    }
+  }
+}
+
+main{
+  padding-top:100px;
+
+  div{
+    @extend .centerContent;
+    height:1200px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    article{
+      width:300px;
+      height:500px;
+      background-color:red;
+    }
+  }
+}
+
+footer{
+  height:150px;
+  background-color:#757575;
+
+  div{
+    @extend .centerContent;
+
+    a{
+
+      i.fa{
+        float:right;
+        margin-left:15px;
+        margin-top:-25px;
+        box-shadow:3px 3px 5px rgba(0,0,0,0.25);
+      }
+
+      i.fa-facebook{
+        @include icons(#3b5998);
+      }
+      i.fa-linkedin{
+        @include icons(#007bb5);
+      }
+      i.fa-github-alt{
+        @include icons(#913399);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .centerContent{
+    width:calc(100% - 50px);
+  }
+
+}
