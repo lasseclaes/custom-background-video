@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
-		<title>Fullscreen Background Video v0.9 with jQuery</title>
+		<title>Fullscreen Background Video v0.9</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/modernizr.touch.js"></script>
   </head>
@@ -25,26 +25,10 @@
       </figure>
       <div id="video-controls">
         <button type="button" id="play-pause">Play</button>
-        <!-- <input type="range" id="seek-bar" value="0"> -->
+        <input type="range" id="seek-bar" value="0">
         <button type="button" id="mute">Mute</button>
         <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-        <!--<input type="range" id="volume-bar">-->
         <button type="button" id="full-screen">Full-Screen</button>
-        <div class="progressTime">
-            <p>Current play time: <span class="current"></span></p>
-            <p>Video duration: <span class="duration"></span></p>
-        </div>
-        <div class="progressBar">
-          <div class="timeBar"></div>
-        </div>
-        <div class="progressBar">
-          <div class="bufferBar"></div>
-        </div>
-        <div class="control">
-          <a href="#" class="ff">Fast Forward</a>
-          <a href="#" class="rw">Rewind (not suported Chrome/FF)</a>
-          <a href="#" class="sl">Slow Motion</a>
-        </div>
       </div>
       <aside id="aside-1"><p>1</p>
       </aside>
@@ -56,6 +40,6 @@
       </aside>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/my_jQuery_videoplayer.js"></script>
+    <script src="js/my_jQuery.js"></script>
   </body>
 </html>

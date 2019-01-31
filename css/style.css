@@ -1,134 +1,197 @@
+@charset "UTF-8";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\000031}}
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 * {
   box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\000035}}
 html, body {
   padding: 0;
   margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000310}}
-body {
-  font-size: 14px;
-  font-family: verdana;
-  background-color: red; }
+html {
+  font-size: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000316}}
+body {
+  /*font-size:14px;
+  font-family:verdana; */
+  /* background-color: red; */ }
+
 a {
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/_reset\.scss}line{font-family:\0000328}}
 h1 {
   font-size: 2rem; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\000036}}
-.centerContent, header div, main div, footer div {
-  width: 75%;
-  margin: auto; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000311}}
 body {
-  background-color: green; }
+  background-color: #45180a; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000316}}
-header {
-  width: 100%;
-  height: 50px;
-  background-color: #2196f3;
+.promo {
+  /* position: relative; /* udkommenteret på full screen video */
+  margin: 40px;
+  font-size: 16px;
+  font-family: "Indie Flower", cursive; }
+
+/* video på enkelt element - se det andet eksempel
+.promo video{
+	width: 100%;
+	border: 1px solid #fff;
+	}*/
+/*video til fullscreen baggrund */
+.promo video {
   position: fixed;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000326}}
-  header div i.fa {
-    background-color: transparent;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    color: white;
-    font-size: 20px;
-    float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000331}}
-  header div nav {
-    width: auto;
-    height: 50px;
-    float: right; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000336}}
-    header div nav a {
-      display: block;
-      float: left;
-      padding: 0 25px 0 25px;
-      line-height: 50px;
-      color: white;
-      transition-duration: 0.5s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000344}}
-      header div nav a:hover {
-        background-color: #e91e63; }
+  /*.promo har fået fjernet position: relative, da "fixed" her skal gå op til <body>-tagget */
+  left: 0;
+  /* den side sidder fast - dvs. videoen skæres fra højre lige nu*/
+  bottom: 0;
+  /* den ende sidder fast - dvs. videoen skæres fra toppen lige nu */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000352}}
-main {
-  padding-top: 100px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000355}}
-  main div {
-    height: 1200px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000362}}
-    main div article {
-      width: 300px;
-      height: 500px;
-      background-color: red; }
+.promo img {
+  position: absolute;
+  width: 160px;
+  top: 20px;
+  left: 50%;
+  margin-left: -80px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000370}}
-footer {
-  height: 150px;
-  background-color: #757575; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000379}}
-  footer div a i.fa {
-    float: right;
-    margin-left: 15px;
-    margin-top: -25px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000386}}
-  footer div a i.fa-facebook {
-    background-color: #3b5998;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    color: white;
-    font-size: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000389}}
-  footer div a i.fa-linkedin {
-    background-color: #007bb5;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    color: white;
-    font-size: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\0000392}}
-  footer div a i.fa-github-alt {
-    background-color: #913399;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    color: white;
-    font-size: 20px; }
+.promo .caption {
+  position: absolute;
+  left: 0;
+  /*left: 1px;*/
+  bottom: 60px;
+  background-color: rgba(69, 24, 10, 0.8);
+  width: 100%; }
 
-@media screen and (max-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/easj\/Google\%20Drev\/lEASJ\/17\/17E\/SASS\/sassy_a\/_sass\/style\.scss}line{font-family:\00003101}}
-  .centerContent, header div, main div, footer div {
-    width: calc(100% - 50px); } }
+.promo .caption {
+  font-size: 3em;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+
+@media screen and (max-width: 700px) {
+  .promo img {
+    top: 15px;
+    width: 120px;
+    margin-left: -60px; }
+
+  .promo .caption {
+    font-size: 2em;
+    line-height: 22px;
+    padding: 10px 0px; } }
+@media screen and (max-width: 450px) {
+  .promo {
+    margin: 15px;
+    padding: 175px 0 40px 0;
+    border: 1px solid #fff;
+    /*background: url(../img/muffins.jpg) no-repeat center bottom;*/
+    background-size: cover; }
+
+  /* step undervejs, før modernizr
+  	.promo video{
+  		display: none;
+  		}
+  */
+  .promo img {
+    /*top: 15px; */
+    width: 90px;
+    margin-left: -45px; }
+
+  .promo .caption {
+    position: static; }
+
+  .promo .caption {
+    font-size: 1.4em;
+    /*line-height: 22px;
+    padding: 10px 0px;	*/ }
+
+  /* not forcing a height on a small screen device when touch is enabled */
+  .touchevents .promo {
+    min-height: inherit; } }
+/* modernizr touch i css'en
+giv agt: i Lynda-viden hedder CSS-klassen "touch", mens den i den nye version (/mit ?forkerte? build) hedder "touchevents" */
+.touchevents .promo {
+  min-height: 500px;
+  border: 1px solid #fff;
+  background: url(../img/muffins.jpg) no-repeat center bottom;
+  background-size: cover; }
+
+.touchevents .promo video {
+  display: none; }
+
+/* https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+/*#seek-bar{
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  -webkit-appearance: none;  /* Override default CSS styles */
+/*  appearance: none;
+  width: 90%; /* Full-width */
+/*  margin: 0;
+  padding: 0;
+  height: 25px; /* Specified height */
+/*  background: #d3d3d3; /* Grey background */
+/*  outline: none; /* Remove outline */
+/*  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+/*  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+/*  transition: opacity 0.2s;
+}
+
+#seek-bar:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+/*    -webkit-transition: 1.2s; /* 0.2 seconds transition on hover */
+/*    transition: opacity 1.2s;
+    /*height: 100px;*/
+/*}*/
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  background-color: red;
+  font-family: verdana;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: opacity 0.5s; }
+
+aside p {
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* progressBar */
+.progressBar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #ccc; }
+
+.timeBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0c0; }
+
+.bufferBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #00c; }
+
+.red {
+  /* for mutebtn */
+  background: red; }
 
 /*# sourceMappingURL=style.css.map */
